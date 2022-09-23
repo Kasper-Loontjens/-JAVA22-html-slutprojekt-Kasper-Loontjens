@@ -8,25 +8,24 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header></header>
-
+    <!-- navbar -->
     <nav>
       <input type="checkbox" name="som" id="som" onclick="isChecked()" />
       <div id="hand">
         <div class="cardinhand">
           <p>Home</p>
           <a href="../index.html"></a>
-          <img src="../images/home.png" alt="" />
+          <img src="../images/home.png" alt="home icon" />
         </div>
         <div class="cardinhand">
           <a href="../html/aboutme.html"></a>
           <p>About me</p>
-          <img src="../images/meicon.png" alt="" class="bordradius" />
+          <img src="../images/meicon.png" alt="profile icon" class="bordradius" />
         </div>
         <div class="cardinhand">
           <a href="../html/project2.html"></a>
           <p>Project 2</p>
-          <img src="../images/animalsicon.png" alt="" />
+          <img src="../images/animalsicon.png" alt="animal icon" />
         </div>
         <div class="cardinhand">
           <a href="../html/project3.html"></a>
@@ -36,17 +35,21 @@
         <div class="cardinhand">
           <a href="../html/project4.html"></a>
           <p>Project 4</p>
-          <img src="../images/pizzaicon.png" alt="tree icon" />
+          <img src="../images/pizzaicon.png" alt="pizza icon" />
         </div>
       </div>
       </div>
+      <!-- fotnot -->
       <footer>
         <p>Kasper Loontjens</p>
         <p>Tel: 070-555 555</p>
       </footer>
     </nav>
+    <!-- main container -->
     <main>
+      <!-- fördelare -->
       <div class="mainbranch1">
+        <!-- info om projektet -->
         <article id="removebackground">
           <h2>Project 1</h2>
           <p>About this project:</p>
@@ -57,33 +60,36 @@
             dolor quae dolorem cupiditate, tempora amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil nulla, rem iure accusamus odit recusandae voluptate, maiores ipsam eos nobis quam cupiditate nemo quae, repellendus facilis corrupti. Ducimus, non quas.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore obcaecati eligendi repudiandae quaerat maiores necessitatibus consectetur illum molestiae impedit ducimus doloremque a quae, sit alias cupiditate laudantium pariatur recusandae dolore.
           </p>
+          <!-- bilder på projektet, fördelat i 3 rader,
+            visas större när man håller över dem med muspekaren -->
           <div class="projectdisplay">
             <img
               src="../images/placeimg_1000_640_tech.jpg"
-              alt=""
+              alt="Tach guy photo"
               onmouseenter="displayprojectimg(this.src)"
               onmouseleave="stopdisplayprojectimg()"
             />
             <img
               src="../images/placeimg_480_640_tech.jpg"
-              alt=""
+              alt="computer photo"
               onmouseenter="displayprojectimg(this.src)"
               onmouseleave="stopdisplayprojectimg()"
             />
             <img
               src="../images/placeimg_640_480_tech.jpg"
-              alt=""
+              alt="computer photo"
               onmouseenter="displayprojectimg(this.src)"
               onmouseleave="stopdisplayprojectimg()"
             />
             <img
               src="../images/placeimg_1000_640_tech1.jpg"
-              alt=""
+              alt="computer photo"
               onmouseenter="displayprojectimg(this.src)"
               onmouseleave="stopdisplayprojectimg()"
             />
           </div>
         </article>
+        <!-- stor bild, bytas ut mot små bilder när man håller över dem -->
         <article  id="removebackground">
           <img
             src="../images/1000tech.jpg"
@@ -92,7 +98,9 @@
             id="show"
             onloadstart="savesource(this.src)"
           />
+        
         </article>
+        
       </div>
     </main>
 

@@ -1,27 +1,30 @@
+/* Reset */
 *{
     box-sizing: border-box;
     margin: 0;
     border: 0;
     padding: 0;
 }
+/* Bakgrundsfärg */
 body{
     background-color:rgb(39, 38, 38);
 }
-
+/* För main-containern, innehåller allt förutom nav-bar  */
 main{
     display: flex;
-    /* border: 2px white solid; */
     flex-direction: column;
     align-items: center;
     color: white;
     margin-bottom: 3rem;
     flex-wrap: wrap;
 }
+/* titel */
 main h1{
     border-bottom: 2px white solid;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
+/* För bild och första artiklen i "about me" */
 .mainimg{
     width: 30%;
     border-radius: 50%;
@@ -32,6 +35,7 @@ main > article {
     padding: 0.5rem;
     background-color: brown;
 }
+/* För text som ska visas när man håller över bilderna på startsidan */
 .overlay{
     position: absolute;
     display: flex;
@@ -48,8 +52,8 @@ main > article {
 article:hover .overlay {
     opacity: 1;
   }
+  /* fördelare av artiklar, delar upp artiklarna i två, höger och vänster */
 .mainbranch1{
-    /* border: 2px white solid; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -62,14 +66,16 @@ article:hover .overlay {
     background-color: brown;
     overflow: none;
 }
-#removebackground{
-    background-color: transparent;
-}
 article img{
     width: auto;
     max-width: 100%;
-    /* max-height: 30rem; */
 }
+/* Tar bort bakgrund för bilder */
+#removebackground{
+    background-color: transparent;
+}
+/* För den stora bilden i projekt visningen,
+ gör så att bilden hänger med och att den inte blir för hög */
 .window{
     display: block;
     position: -webkit-sticky;
@@ -77,11 +83,11 @@ article img{
     top: 10px;
     max-height: 30rem;
 }
+/* För dem små bilderna. */
 .projectdisplay{
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    /* width: 100%; */
     margin-top: 1rem;
     justify-content: flex-start;
 }
@@ -90,9 +96,7 @@ article img{
     height: 100%;
     padding: 1%;
 }
-.myDiv:hover .show{
-    display: block;
-}
+/* För Navbar  */
 nav{
     background-color: brown;
     position: fixed;
@@ -103,53 +107,54 @@ nav{
     width: 100%;
     display:flex;
     justify-content: flex-start;
-    z-index: 1;
+    z-index: 2;
 }
+/* För checkbox */
 #som{
     flex-basis: 2rem;
     margin: 1rem;
 }
-
+/* För containern av länkar/kort */
 #hand{
-    display: flex;
     flex-direction: row;
     display: none;
-    width: 100%;
+    position: relative;
+    flex-basis: 100%;
+    align-items: flex-end;
 }
+/* För kort */
 .cardinhand{
-    /* background-color:rgb(73, 32, 43); */
     background-color: brown;
     position: relative;
     flex-basis: 10rem;
-    height: 15rem;
-    bottom: 10rem;
     border: 2px solid black;
-    border-radius: 5%;
-    margin: 0.5rem;
+    border-radius: 10%;
+    margin: 0.2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    aspect-ratio: 0.7;
 }
 .cardinhand img{
     width: 100%;
-    /* border-radius: 50%; */
 }
 .bordradius{
     border-radius: 50%;
-
 }
 .cardinhand:hover{
-    bottom: 20rem;
+    bottom: 1rem;
     flex-basis: 13rem;
-    height: 20rem;
 }
+/* täcker kortet med länken */
 .cardinhand a{
     position: absolute;
+    display: block;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(7, 253, 7, 0);
 }
+/* För fotnoten */
 footer{
     display: block;
     color: white;
@@ -158,6 +163,3 @@ footer{
     align-self: center;
     z-index: -10;
 }
-
-
-

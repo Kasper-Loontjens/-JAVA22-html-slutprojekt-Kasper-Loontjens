@@ -8,35 +8,34 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header></header>
-
+    <!-- navbar -->
     <nav>
       <input type="checkbox" name="som" id="som" onclick="isChecked()" />
       <div id="hand">
         <div class="cardinhand">
           <p>Home</p>
           <a href="../index.html"></a>
-          <img src="../images/home.png" alt="" />
+          <img src="../images/home.png" alt="home icon" />
         </div>
         <div class="cardinhand">
           <a href="../html/aboutme.html"></a>
           <p>About me</p>
-          <img src="../images/meicon.png" alt="" class="bordradius" />
+          <img src="../images/meicon.png" alt="profile icon" class="bordradius" />
         </div>
         <div class="cardinhand">
           <a href="../html/project1.html"></a>
           <p>Project 1</p>
-          <img src="../images/techicon.png" alt="tech guy" />
+          <img src="../images/techicon.png" alt="tech icon" />
         </div>
         <div class="cardinhand">
           <a href="../html/project2.html"></a>
           <p>Project 2</p>
-          <img src="../images/animalsicon.png" alt="" />
+          <img src="../images/animalsicon.png" alt="animal icon" />
         </div>
         <div class="cardinhand">
             <a href="../html/project4.html"></a>
             <p>Project 4</p>
-            <img src="../images/pizzaicon.png" alt="tree icon" />
+            <img src="../images/pizzaicon.png" alt="pizza icon" />
           </div>
         </div>
       </div>
@@ -45,8 +44,10 @@
         <p>Tel: 070-555 555</p>
       </footer>
     </nav>
+    <!-- main container -->
     <main>
       <div class="mainbranch1">
+        <!-- om projektet -->
         <article id="removebackground">
           <h2>Project 3</h2>
           <p>About this project:</p>
@@ -60,31 +61,34 @@
             aspernatur quibusdam? Incidunt nobis iste ipsa illum? Et ratione
             dolor quae dolorem cupiditate, tempora amet lor lore.
           </p>
+          <!-- bilder på projektet, fördelat i 3 rader,
+          visas större när man håller över dem med muspekaren --> 
           <div class="projectdisplay">
             <img
               src="../images/placeimg_1000_1000_nature.jpg"
-              alt=""
+              alt="nature photo"
               onmouseenter="displayprojectimg(this.src)"
               onmouseleave="stopdisplayprojectimg()"
             />
             <img
               src="../images/placeimg_1000_640_nature.jpg"
-              alt=""
+              alt="nature photo"
               onmouseenter="displayprojectimg(this.src)"
               onmouseleave="stopdisplayprojectimg()"
             />
             <img
               src="../images/placeimg_560_640_nature.jpg"
-              alt=""
+              alt="nature photo"
               onmouseenter="displayprojectimg(this.src)"
               onmouseleave="stopdisplayprojectimg()"
             />
           </div>
         </article>
+         <!-- stor bild, bytas ut mot små bilder när man håller över dem -->
         <article id="removebackground">
           <img
             src="../images/1000nature.jpg"
-            alt="nature"
+            alt="nature photo"
             class="window"
             id="show"
             onloadstart="savesource(this.src)"
@@ -92,7 +96,6 @@
         </article>
       </div>
     </main>
-
     <script src="../js/bot.js"></script>
   </body>
 </html>
